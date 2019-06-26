@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <!--引入4个文件 必须注意导入顺序 -->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/my_color.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <style>
+        #header{position: fixed;z-index:999;}
+        #wrap{background: #e8e8e8;}
+        #wrap div ul li a{color:#000;font-size:12px;text-decoration: none;}
+        #wrap div ul li a:hover{color: #999;text-decoration: none;}
+        #d1 ul li a{color:#000;font-size: 12px;text-decoration: none;}
+        .card{border:0;}
+        .card-header{border:0;background: #fff;padding: 0;}
+        @media (min-width: 768px){
+            .card-header a{padding:10px 20px !important;}
+            .card-header a:hover{border-bottom:2px solid #000;}
+            .card-header a b{font-weight: normal;}
+            .card:hover .collapse{display: block;}
+            .card ul li a:hover{color:#999 !important;}
+        }
+        #footer{padding:50px 0;background: #e8e8e8;}
+        #footer-top{border-bottom:1px solid #999;padding:0 90px 60px 90px;margin-bottom: 30px;}
+        #footer-top ul li{margin-bottom:5px;}
+        #footer-top ul li h5{font-size:14px;margin-bottom:50px;}
+        #footer-top ul li a{color:#000;font-size:14px;text-decoration:none;}
+        #footer-top ul li a:hover{color:#999;}
+        .form-inline{align-items: flex-start;}
+        #footer-bottom .sb{width:60px;}
+        #footer-bottom p{font-size:12px;}
+        #footer-bottom p a{color:#999;text-decoration: none;}
+        .nav-right li a{color:#000;font-size:14px;text-decoration: none;}
+        .nav-right li a:hover{color:#999;}
+    </style>
+</head>
+<body>
+<div id="header" class="w-100 bg-white">
+    <div class="form-inline" id="wrap">
+        <div class="col-md-3 p-0">
+            <ul class="list-unstyled justify-content-around m-0 py-2 d-sm-none d-md-flex">
+                <li><a href="#">中国|中文(元)</a></li>
+                <li><a href="#">精品店</a></li>
+                <li><a href="#">客户服务</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6 text-center p-0 py-2">免费配送!</div>
+        <div class="col-md-3 p-0">
+            <ul class="list-unstyled justify-content-around m-0 py-2 d-sm-none d-md-flex">
+                <li><a href="login.html">登录/注册</a></li>
+                <li><a href="#">心愿单</a></li>
+                <li><a href="#">购物袋</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar navbar-expand-md navbar-light d-md-none">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#d1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h5 class="m-0"><a href="wbl.html"><a href="wbl.html" class="no_underline text-dark">V E R S A C E</a></a></h5>
+        <ul class="nav-right d-flex list-unstyled">
+            <li class="pt-3">
+                <a href="#"><img src="picture/care.png" alt=""/></a>
+                <a href="#"><img src="picture/shop_car.png" alt=""/></a>
+            </li>
+        </ul>
+        <div class="collapse navbar-collapse text-center justify-content-center w-100" id="d1">
+            <ul class="navbar-nav" id="parent">
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#ws" class="nav-link card-link px-3" data-toggle="collapse" ><b>女士</b></a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="ws">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="woman.html">新品系列</a></li>
+                                <li><a href="#">成衣系列</a></li>
+                                <li><a href="#">包装</a></li>
+                                <li><a href="#">女鞋</a></li>
+                                <li><a href="#">配饰</a></li>
+                                <li><a href="#">腕表</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header" >
+                            <a href="#ms" class="nav-link card-link px-3"data-toggle="collapse"><b>男士</b></a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="ms">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="man.html">新品系列</a></li>
+                                <li><a href="#">成衣系列</a></li>
+                                <li><a href="#">包装</a></li>
+                                <li><a href="#">男鞋</a></li>
+                                <li><a href="#">包袋和配饰</a></li>
+                                <li><a href="#">腕表</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#jj" class="nav-link card-link px-3" data-toggle="collapse">VERSACE HOME <b>家居用品</b></a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="jj">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="#">卧室及浴室精品</a></li>
+                                <li><a href="#">起居室精品</a></li>
+                                <li><a href="#">HOME LIFESTYLE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#zk" class="nav-link card-link px-3" data-toggle="collapse"><b>限时折扣</b></a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="zk">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="#">男士限时折扣</a></li>
+                                <li><a href="#">女士限时折扣</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#jc" class="nav-link card-link px-3" data-toggle="collapse">JEANS COUTURE</a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="jc">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="#">新品系列</a></li>
+                                <li><a href="#">女士成衣</a></li>
+                                <li><a href="#">男士成衣</a></li>
+                                <li><a href="#">STAY TUNED</a></li>
+                                <li><a href="#">2019年初秋系列</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#wov" class="nav-link card-link px-3" data-toggle="collapse">WORLD OF VERSACE</a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="wov">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="#">高点聚焦</a></li>
+                                <li><a href="#">品牌</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item d-md-none"><a href="#" class="nav-link"><hr/></a></li>
+                <li class="nav-item d-md-none"><a href="#" class="nav-link">登录/注册</a></li>
+                <li class="nav-item d-md-none"><a href="#" class="nav-link">客户服务</a></li>
+                <li class="nav-item d-md-none"><a href="#" class="nav-link">中国|中文(元)</a></li>
+                <li class="nav-item d-md-none"><a href="#" class="nav-link">精品店</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="navbar navbar-expand-md navbar-light d-sm-none d-md-block">
+        <div class="text-center w-100">
+            <h2 class="m-0 mt-3"><a href="wbl.html" class="no_underline text-dark">V E R S A C E</a></h2>
+        </div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#d1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center justify-content-center w-100" id="d1">
+            <ul class="navbar-nav" id="parent">
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#ws" class="nav-link card-link px-3" ><b>女士</b></a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="ws">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="woman.html">新品系列</a></li>
+                                <li><a href="#">成衣系列</a></li>
+                                <li><a href="#">包装</a></li>
+                                <li><a href="#">女鞋</a></li>
+                                <li><a href="#">配饰</a></li>
+                                <li><a href="#">腕表</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header" >
+                            <a href="#ms" class="nav-link card-link px-3"><b>男士</b></a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="ms">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="man.html">新品系列</a></li>
+                                <li><a href="#">成衣系列</a></li>
+                                <li><a href="#">包装</a></li>
+                                <li><a href="#">男鞋</a></li>
+                                <li><a href="#">包袋和配饰</a></li>
+                                <li><a href="#">腕表</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#jj" class="nav-link card-link px-3">VERSACE HOME <b>家居用品</b></a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="jj">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="#">卧室及浴室精品</a></li>
+                                <li><a href="#">起居室精品</a></li>
+                                <li><a href="#">HOME LIFESTYLE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#zk" class="nav-link card-link px-3"><b>限时折扣</b></a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="zk">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="#">男士限时折扣</a></li>
+                                <li><a href="#">女士限时折扣</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#jc" class="nav-link card-link px-3">JEANS COUTURE</a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="jc">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="#">新品系列</a></li>
+                                <li><a href="#">女士成衣</a></li>
+                                <li><a href="#">男士成衣</a></li>
+                                <li><a href="#">STAY TUNED</a></li>
+                                <li><a href="#">2019年初秋系列</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#wov" class="nav-link card-link px-3">WORLD OF VERSACE</a>
+                        </div>
+                        <div class="collapse" data-parent="#parent" id="wov">
+                            <ul class="card-body list-unstyled p-0">
+                                <li><a href="#">高点聚焦</a></li>
+                                <li><a href="#">品牌</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item d-md-none"><a href="#" class="nav-link"><hr/></a></li>
+                <li class="nav-item d-md-none"><a href="#" class="nav-link">登录/注册</a></li>
+                <li class="nav-item d-md-none"><a href="#" class="nav-link">客户服务</a></li>
+                <li class="nav-item d-md-none"><a href="#" class="nav-link">中国|中文(元)</a></li>
+                <li class="nav-item d-md-none"><a href="#" class="nav-link">精品店</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<table></table>
+<div class="container-fluid">
+    <img class="w-100 my_mt" src="picture/11.png" alt=""/>
+    <div class="text-center mb-5">
+        <h1 class="mt-5">男士</h1>
+        <div class="navbar justify-content-center">
+            <ul class="navbar-nav navbar-expand">
+                <li class="nav-item mx-3"><a href="#" class="nav-link my_black my_hover font_small">最新上市</a></li>
+                <li class="nav-item mx-3"><a href="#" class="nav-link my_black my_hover font_small">成衣系列</a></li>
+                <li class="nav-item mx-3"><a href="#" class="nav-link my_black my_hover font_small">包袋配饰</a></li>
+                <li class="nav-item mx-3"><a href="#" class="nav-link my_black my_hover font_small">腕表</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="text-center">
+        <h6 class="font_small">男士 2019 早秋系列</h6>
+        <h1 class="mb-5">荧光色调</h1>
+        <div class="row">
+            <div class="col-sm-4 my_bgcolor">
+                <div>
+                    <img src="picture/12.png" alt="" class="w-50 my_scale"/>
+                </div>
+            </div>
+            <div class="col-sm-4 my_bgcolor">
+                <div>
+                    <a href="product.html"><img src="picture/13.png" alt=""  class="w-50 my_scale"/></a>
+                </div>
+            </div>
+            <div class="col-sm-4  my_bgcolor">
+                <div>
+                    <img src="picture/14.png" alt="" class="w-50 my_scale"/>
+                </div>
+            </div>
+            <div class="col-sm-4 bg-white">
+                <h3 class="mt-5"><a href="#" class="my_black no_underline my_hover">T 恤</a></h3>
+                <p><a href="#" class="my_black no_underline my_hover font_small">选购 ></a></p>
+            </div>
+            <div class="col-sm-4 bg-white">
+                <h3 class="mt-5"><a href="product.html" class="my_black no_underline my_hover">IPHONE 手机壳</a></h3>
+                <p><a href="product.html" class="my_black no_underline my_hover font_small">选购></a></p>
+            </div>
+            <div class="col-sm-4 bg-white">
+                <h3 class="mt-5"><a href="#" class="my_black no_underline my_hover">双肩背包</a></h3>
+                <p class="mb-5"><a href="#" class="my_black no_underline my_hover font_small">选购 ></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <h6 class="font_small mt-5">提升整体装扮格调</h6>
+        <h1 class="mb-5">金色点缀</h1>
+        <div class="row">
+            <div class="col-sm-4 my_bgcolor">
+                <div>
+                    <img src="picture/15.png" alt="" class="w-75 my_scale"/>
+                </div>
+            </div>
+            <div class="col-sm-4 my_bgcolor">
+                <div>
+                    <img src="picture/16.png" alt="" class="w-75 my_scale mt-5 ml-4"/>
+                </div>
+            </div>
+            <div class="col-sm-4  my_bgcolor">
+                <div>
+                    <img src="picture/17.png" alt="" class="w-75 my_scale"/>
+                </div>
+            </div>
+            <div class="col-sm-4 bg-white">
+                <h3 class="mt-5"><a href="#" class="my_black no_underline my_hover">项链</a></h3>
+                <p><a href="#" class="my_black no_underline my_hover font_small">选购 ></a></p>
+            </div>
+            <div class="col-sm-4 bg-white">
+                <h3 class="mt-5"><a href="#" class="my_black no_underline my_hover">配饰</a></h3>
+                <p><a href="#" class="my_black no_underline my_hover font_small">选购 ></a></p>
+            </div>
+            <div class="col-sm-4 bg-white mb-5">
+                <h3 class="mt-5"><a href="#" class="my_black no_underline my_hover">戒指</a></h3>
+                <p class="mb-5"><a href="#" class="my_black no_underline my_hover font_small">选购 ></a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="footer" class="mt-5">
+    <div class="form-inline text-center" id="footer-top">
+        <div class="col-3">
+            <ul class="list-unstyled">
+                <li><h5>店铺分布</h5></li>
+                <li><a href="#">搜索精品店</a></li>
+                <li><a href="#">Versace 腕表门店</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <ul class="list-unstyled">
+                <li><h5>客户服务</h5></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">帮助/常见问题</a></li>
+                <li><a href="#">销售条款与细则</a></li>
+                <li><a href="#">订单及配送</a></li>
+                <li><a href="#">退货和退款</a></li>
+                <li><a href="#">产品验证</a></li>
+                <li><a href="#">下载目录</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <ul class="list-unstyled">
+                <li><h5>关于我们</h5></li>
+                <li><a href="#">企业简介</a></li>
+                <li><a href="#">个人数据保护</a></li>
+                <li><a href="#">企业数据</a></li>
+                <li><a href="#">投资者关系</a></li>
+                <li><a href="#">加入我们</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <ul class="list-unstyled">
+                <li><h5>细则及条款</h5></li>
+                <li><a href="#">法律声明</a></li>
+                <li><a href="#">道德准则</a></li>
+                <li><a href="#">隐私政策</a></li>
+                <li><a href="#">Cookie政策</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer-bottom" class="text-center">
+        <img class="sb my-5" src="picture/logo_medusa.png" alt=""/>
+        <p>© Gianni Versace S.r.l. P.IVA IT04636090963</p>
+        <p>京ICP备17024039号</p>
+        <a href="#"><img src="picture/beian-license-versace-icon.png" alt=""/></a>
+        <p class="m-0"><a href="#">京公网安备</a></p>
+        <p class="m-0"><a href="#">11010502034484号</a></p>
+    </div>
+</div>
+
+</body>
+</html>
