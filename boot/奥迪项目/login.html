@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <!--引入4个文件 必须注意导入顺序 -->
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/head.css"/>
+    <link rel="stylesheet" href="./css/page.css"/>
+    <link rel="stylesheet" href="./css/login.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="bg-white d-flex justify-content-center">
+    <div id="header">
+        <div class="head  py-3">
+            <a href="javescript:"><img src="picture/logo.png" alt=""/></a>
+            <a href="javascript:"><img src="picture/logo2.png" class="float-right"  alt=""/></a>
+        </div>
+        <ul class="d-flex list-unstyled">
+            <li class="nav-hover">
+                <div>
+                    <a href="javascript:">奥迪车型</a>
+                </div>
+                <div class="nav-carshow">
+                    <ul class="list-unstyled d-flex border-0 ml-5">
+                        <li><a href="javascript:">A3</a></li>
+                        <li><a href="javascript:">A4</a></li>
+                        <li><a href="javascript:">A5</a></li>
+                        <li><a href="javascript:">A7</a></li>
+                        <li><a href="javascript:">Q3</a></li>
+                        <li><a href="javascript:">Q5</a></li>
+                        <li><a href="javascript:">Q7</a></li>
+                        <li><a href="javascript:">TT</a></li>
+                        <li><a href="javascript:">R8</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-hover">
+                <div>
+                    <a href="javascript:">奥迪官方认证二手车</a>
+                </div>
+                <div class="nav-nr">
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:">销售服务</a></li>
+                        <li><a href="javascript:">置换收购服务</a></li>
+                        <li><a href="javascript:">官方认证活动</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-hover">
+                <div>
+                    <a href="javascript:">购车工具</a>
+                </div>
+                <div class="nav-nr">
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:">限时购车方案</a></li>
+                        <li><a href="javascript:">老用户购车</a></li>
+                        <li><a href="javascript:">大用户&VIP</a></li>
+                        <li><a href="javascript:">贷款服务</a></li>
+                        <li><a href="javascript:">保险服务</a></li>
+                        <li><a href="javascript:">延长保修服务</a></li>
+                        <li><a href="javascript:">在线购车</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-hover">
+                <div>
+                    <a href="javascript:">售后服务</a>
+                </div>
+                <div class="nav-nr">
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:">奥迪卓悦服务</a></li>
+                        <li><a href="javascript:">三包保障服务</a></li>
+                        <li><a href="javascript:">维修保养服务</a></li>
+                        <li><a href="javascript:">24小时道路救援</a></li>
+                        <li><a href="javascript:">原厂备件附件</a></li>
+                        <li><a href="javascript:">奥迪移动出行</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-hover">
+                <div>
+                    <a href="javascript:">创新科技</a>
+                </div>
+                <div class="nav-nr">
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:">奥迪概念车</a></li>
+                        <li><a href="javascript:">奥迪设计</a></li>
+                        <li><a href="javascript:">奥迪quattro</a></li>
+                        <li><a href="javascript:">奥迪驾驶系统</a></li>
+                        <li><a href="javascript:">奥迪connect互联科技</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-hover">
+                <div>
+                    <a href="javascript:">奥迪品牌</a>
+                </div>
+                <div class="nav-nr">
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:">奥迪新闻</a></li>
+                        <li><a href="javascript:">奥迪体验活动</a></li>
+                        <li><a href="javascript:">奥迪车主俱乐部</a></li>
+                        <li><a href="javascript:">关于奥迪</a></li>
+                        <li><a href="javascript:">责任与贡献</a></li>
+                        <li><a href="javascript:">经销商招募</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="javascript:">Audi Sport</a></li>
+            <li><a href="javascript:">搜索</a></li>
+        </ul>
+    </div>
+</div>
+<div class="d-flex justify-content-center login-padding">
+    <div class="m-auto login-width" id="login">
+        <h5>我的奥迪账号登录</h5>
+        <hr/>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="font-14">
+                <span>*</span>手机/邮箱
+            </div>
+            <input type="text"/>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="font-14">
+                <span>*</span>密码
+            </div>
+            <input type="password"/>
+        </div>
+        <div class=" mt-3 wjmm">
+
+                <div class="font-14 align-items-center d-flex">
+                    <img src="picture/gou.png" alt=""/>
+                    记住密码
+                </div>
+            <div class="d-flex">
+                <div>
+                    <a href="javascript:">
+                        <span>  > </span> 忘记密码
+                    </a>
+                </div>
+                <div class="ml-3">
+                    <a href="javascript:">
+                        <span>  > </span> 注册账号
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="login-btn  text-right">
+            <a href="javascript:">登录 <img src="picture/loginjt.png" alt=""/></a>
+        </div>
+        <hr/>
+    </div>
+
+</div>
+<div class=" bg-hs" id="audi-list">
+        <ul class="d-flex list-unstyled row py-5 mx-5">
+            <li class="col-3">
+                <ul>
+                    <li><a href="javascript:">奥迪车型</a></li>
+                    <li><a href="javascript:">查看所有奥迪车型</a></li>
+                    <li><a href="javascript:">新车在线展厅</a></li>
+                </ul>
+            </li>
+            <li class="col-3">
+                <ul>
+                    <li><a href="javascript:">奥迪官方认证二手车</a></li>
+                    <li><a href="javascript:">销售服务</a></li>
+                    <li><a href="javascript:">官方认证</a></li>
+                </ul>
+            </li>
+            <li class="col-3">
+                <ul>
+                    <li><a href="javascript:">购车工具</a></li>
+                    <li><a href="javascript:">限时购车方案</a></li>
+                    <li><a href="javascript:">老用户购车</a></li>
+                    <li><a href="javascript:">大用户&VIP</a></li>
+                    <li><a href="javascript:">贷款服务</a></li>
+                    <li><a href="javascript:">保险服务</a></li>
+                    <li><a href="javascript:">延长保修服务</a></li>
+                    <li><a href="javascript:">在线购车</a></li>
+                </ul>
+            </li>
+            <li class="col-3">
+                <ul>
+                    <li><a href="javascript:">售后服务</a></li>
+                    <li><a href="javascript:">奥迪卓越服务</a></li>
+                    <li><a href="javascript:">三包保障服务</a></li>
+                    <li><a href="javascript:">维修保养服务</a></li>
+                    <li><a href="javascript:">24小时道路救援</a></li>
+                    <li><a href="javascript:">原厂备件附件</a></li>
+                    <li><a href="javascript:">奥迪移动出行</a></li>
+                </ul>
+            </li>
+            <li class="col-3 mt-5">
+                <ul>
+                    <li><a href="javascript:">创新科技</a></li>
+                    <li><a href="javascript:">奥迪概念车</a></li>
+                    <li><a href="javascript:">奥迪设计</a></li>
+                    <li><a href="javascript:">奥迪quattro</a></li>
+                    <li><a href="javascript:">奥迪驾驶技术</a></li>
+                    <li><a href="javascript:">奥迪coonnect互联科技</a></li>
+                </ul>
+            </li>
+            <li class="col-3 mt-5">
+                <ul>
+                    <li><a href="javascript:">奥迪品牌</a></li>
+                    <li><a href="javascript:">奥迪新闻</a></li>
+                    <li><a href="javascript:">奥迪体验活动</a></li>
+                    <li><a href="javascript:">奥迪车主俱乐部</a></li>
+                    <li><a href="javascript:">关于奥迪</a></li>
+                    <li><a href="javascript:">责任与贡献</a></li>
+                    <li><a href="javascript:">经销商招募</a></li>
+                </ul>
+            </li>
+            <li class="col-3 mt-5">
+                <ul>
+                    <li><a href="javascript:">联系奥迪</a></li>
+                    <li><a href="javascript:">联系我们</a></li>
+                    <li><a href="javascript:">预约试驾</a></li>
+                    <li><a href="javascript:">联系经销商</a></li>
+                    <li><a href="javascript:">索取产品手册</a></li>
+                    <li><a href="javascript:">订阅奥迪新闻专递</a></li>
+                    <li><a href="javascript:">咨询/投诉/建议</a></li>
+                </ul>
+            </li>
+            <li class="col-3 mt-5">
+                <ul>
+                    <li><a href="javascript:">相关网站链接</a></li>
+                    <li><a href="javascript:">奥迪全球</a></li>
+                    <li><a href="javascript:">一汽大众</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<div id="footer" class="bg-shs">
+    <div class="footerbar">
+        <div>
+            <ul class="row list-unstyled text-center">
+                <li class="col-3">
+                    <div>
+                        <a href="javascript:">
+                            <img src="picture/3.png" alt=""/>
+                            <p>索取报价</p>
+                        </a>
+
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div>
+                        <a href="javascript:">
+                            <img src="picture/2.png" alt=""/>
+                            <p>查询经销商</p>
+                        </a>
+
+                    </div>
+
+                </li>
+                <li class="col-3">
+                    <div>
+                        <a href="javascript:">
+                            <img src="picture/1.png" alt=""/>
+                            <p>预约试驾</p>
+                        </a>
+
+                    </div>
+
+                </li>
+                <li class="col-3">
+                    <div>
+                        <a href="javascript:">
+                            <img src="picture/6.png" alt=""/>
+                            <p>金融贷款计算器</p>
+                        </a>
+
+                    </div>
+
+                </li>
+                <li class="col-3">
+                    <div class="border-0">
+                        <a href="javascript:">
+                            <img src="picture/5.png" alt=""/>
+                            <p>索取产品手册</p>
+                        </a>
+
+                    </div>
+
+                </li>
+                <li class="col-3">
+                    <div>
+                        <a href="javascript:">
+                            <img src="picture/4.png" alt=""/>
+                            <p>查询新车库存</p>
+                        </a>
+
+                    </div>
+
+                </li>
+                <li class="col-3">
+                    <div>
+                        <a href="javascript:">
+                            <img src="picture/7.png" alt=""/>
+                            <p>奥迪在线4S店</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-between">
+            <ul class="list-unstyled d-flex">
+                <li class="pl-0"><a href="javascript:">订阅奥迪新闻专递</a> </li>
+                <li><a href="javascript:">隐私权/版权</a> </li>
+                <li><a href="javascript:">奥迪全球</a> </li>
+                <li><a href="javascript:">一汽-大众</a> </li>
+                <li><a href="javascript:">English Version</a> </li>
+                <li><a href="javascript:">吉ICP备09000793号</a> </li>
+                <li><a href="javascript:">吉公网安备 22010602000241号</a> </li>
+            </ul>
+            <ul class="list-unstyled d-flex">
+                <li class="pr-2"><a href="javascript:"><img src="picture/8.png" alt=""/></a> </li>
+                <li><a href="javascript:"><img src="picture/9.png" alt=""/></a> </li>
+                <li><a href="javascript:"><img src="picture/10.png" alt=""/></a> </li>
+            </ul>
+        </div>
+        <div>
+            <p>© 2019 一汽-大众汽车有限公司 版权所有</p>
+        </div>
+    </div>
+</div>
+<script src="js/carshow.js"></script>
+</body>
+</html>

@@ -17,6 +17,7 @@
         #wrap div ul li a{color:#000;font-size:12px;text-decoration: none;}
         #wrap div ul li a:hover{color: #999;text-decoration: none;}
         #d1 ul li a{color:#000;font-size: 12px;text-decoration: none;}
+        #d2 ul li a{color:#000;font-size: 12px;text-decoration: none;}
         .card{border:0;}
         .card-header{border:0;background: #fff;padding: 0;}
         @media (min-width: 768px){
@@ -47,18 +48,33 @@
             <ul class="list-unstyled justify-content-around m-0 py-2 d-sm-none d-md-flex">
                 <li><a href="#">中国|中文(元)</a></li>
                 <li><a href="#">精品店</a></li>
-                <li><a href="#">客户服务</a></li>
+                <li><a href="khfw.html">客户服务</a></li>
             </ul>
         </div>
         <div class="col-md-6 text-center p-0 py-2">免费配送!</div>
         <div class="col-md-3 p-0">
             <ul class="list-unstyled justify-content-around m-0 py-2 d-sm-none d-md-flex">
                 <li><a href="login.html">登录/注册</a></li>
-                <li><a href="#">心愿单</a></li>
-                <li><a href="#">购物袋</a></li>
+                <li class="position-relative li_mini_cart dh_hover">
+                    <a href="#">心愿单</a>
+                    <div class="mini_cart my_bgcolor">
+                        <h4 class="text-center py-4">创建心愿单</h4>
+                        <hr/>
+                        <p class="text-center"><a href="#" class="xc_border font-weight-bold no_underline">登录/注册</a></p>
+                    </div>
+                </li>
+                <li class="position-relative li_mini_cart dh_hover">
+                    <a href="gwc.html">购物袋</a>
+                    <div class="mini_cart my_bgcolor">
+                        <h4 class="text-center py-4">购物车为空</h4>
+                        <hr/>
+                        <p class="text-center"><a href="#" class="xc_border font-weight-bold no_underline">安全结账</a></p>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
+
     <div class="navbar navbar-expand-md navbar-light d-md-none">
         <button class="navbar-toggler" data-toggle="collapse" data-target="#d1">
             <span class="navbar-toggler-icon"></span>
@@ -79,7 +95,7 @@
                         </div>
                         <div class="collapse" data-parent="#parent" id="ws">
                             <ul class="card-body list-unstyled p-0">
-                                <li><a href="woman.html">新品系列</a></li>
+                                <li><a href="women.html">新品系列</a></li>
                                 <li><a href="#">成衣系列</a></li>
                                 <li><a href="#">包装</a></li>
                                 <li><a href="#">女鞋</a></li>
@@ -175,106 +191,280 @@
         <div class="text-center w-100">
             <h2 class="m-0 mt-3"><a href="wbl.html" class="no_underline text-dark">V E R S A C E</a></h2>
         </div>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#d1">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center justify-content-center w-100" id="d1">
-            <ul class="navbar-nav" id="parent">
-                <li class="nav-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <a href="#ws" class="nav-link card-link px-3" ><b>女士</b></a>
-                        </div>
-                        <div class="collapse" data-parent="#parent" id="ws">
-                            <ul class="card-body list-unstyled p-0">
-                                <li><a href="woman.html">新品系列</a></li>
-                                <li><a href="#">成衣系列</a></li>
-                                <li><a href="#">包装</a></li>
-                                <li><a href="#">女鞋</a></li>
-                                <li><a href="#">配饰</a></li>
-                                <li><a href="#">腕表</a></li>
+        <div id="d2" class="container">
+            <ul class="navbar-nav justify-content-center w-100">
+                <li class="nav-item dh_hover px-2">
+                    <div>
+                        <a href="" class="nav-link my_hover " >女士</a>
+                    </div>
+
+                    <div class=" dh_nr">
+                        <div class="d-flex justify-content-center py-5">
+                            <ul class="row list-unstyled">
+                                <li class="col-3 border_right">
+                                    <ul class="list-unstyled">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">新品系列</a></li>
+                                        <li><img src="picture/41.png" alt="" class="w-75"/></li>
+                                        <li><a class="my_hover" href="woman.html">最新上市</a></li>
+                                        <li><a class="my_hover" href="woman.html">icon系列</a></li>
+                                        <li><a class="my_hover" href="woman.html">Cross Chainer Sneakers</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3">
+                                    <ul class=" list-unstyled p-0">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">成衣系列</a></li>
+                                        <li><a class="my_hover" href="#">连衣裙</a></li>
+                                        <li><a class="my_hover" href="#">外套和大衣</a></li>
+                                        <li><a class="my_hover" href="#">衬衫和上衣</a></li>
+                                        <li><a class="my_hover" href="#">针织衫</a></li>
+                                        <li><a class="my_hover" href="#">半身裙</a></li>
+                                        <li><a class="my_hover" href="#">裤子</a></li>
+                                        <li><a class="my_hover" href="#">Denim 牛仔装</a></li>
+                                        <li><a class="my_hover" href="#">运动服</a></li>
+                                        <li><a class="my_hover" href="#">海滩系列</a></li>
+                                        <li><a class="my_hover" href="#">内衣和袜子</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3">
+                                    <ul class=" list-unstyled p-0">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">包袋</a></li>
+                                        <li><a class="my_hover" href="#">icon系列</a></li>
+                                        <li><a class="my_hover" href="#">Tribute 系列</a></li>
+                                        <li><a class="my_hover" href="#">Palazzo Empire 系列</a></li>
+                                        <li><a class="my_hover" href="#">手柄包</a></li>
+                                        <li><a class="my_hover" href="#">托特包</a></li>
+                                        <li><a class="my_hover" href="#">肩背包</a></li>
+                                        <li><a class="my_hover" href="#">旅行箱包</a></li>
+                                        <li><a class="my_hover" href="#">手拿包和晚宴包</a></li>
+                                        <li><a class="my_hover" href="#">双肩包和腰包</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3">
+                                    <ul class=" list-unstyled p-0">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">女鞋</a></li>
+                                        <li><a class="my_hover" href="#">休闲运动鞋</a></li>
+                                        <li><a class="my_hover" href="#">高跟鞋</a></li>
+                                        <li><a class="my_hover" href="#">高跟凉鞋</a></li>
+                                        <li><a class="my_hover" href="#">平底鞋</a></li>
+                                        <li><a class="my_hover" href="#">短靴和长靴</a></li>
+                                        <li><a class="my_hover" href="#">凉鞋和拖鞋</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <div class="card">
-                        <div class="card-header" >
-                            <a href="#ms" class="nav-link card-link px-3"><b>男士</b></a>
-                        </div>
-                        <div class="collapse" data-parent="#parent" id="ms">
-                            <ul class="card-body list-unstyled p-0">
-                                <li><a href="man.html">新品系列</a></li>
-                                <li><a href="#">成衣系列</a></li>
-                                <li><a href="#">包装</a></li>
-                                <li><a href="#">男鞋</a></li>
-                                <li><a href="#">包袋和配饰</a></li>
-                                <li><a href="#">腕表</a></li>
+                <li class="nav-item dh_hover px-2">
+                    <div>
+                        <a href="man.html" class="nav-link my_hover border_bottom" >男士</a>
+                    </div>
+
+                    <div class="dh_nr">
+                        <div class="d-flex justify-content-center py-5">
+                            <ul class="row list-unstyled">
+                                <li class="col-3 border_right">
+                                    <ul class="list-unstyled">
+                                        <li class="pb-4"><a class="my_hover" href="man.html">新品系列</a></li>
+                                        <li><img src="picture/42.png" alt="" class="w-75"/></li>
+                                        <li><a class="my_hover" href="woman.html">最新上市</a></li>
+                                        <li><a class="my_hover" href="woman.html">Cross Chainer Sneakers</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3">
+                                    <ul class=" list-unstyled p-0">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">成衣系列</a></li>
+                                        <li><a class="my_hover" href="#">西服正装</a></li>
+                                        <li><a class="my_hover" href="#">外套和大衣</a></li>
+                                        <li><a class="my_hover" href="#">衬衫</a></li>
+                                        <li><a class="my_hover" href="#">针织衫</a></li>
+                                        <li><a class="my_hover" href="#">T恤和Polo衫</a></li>
+                                        <li><a class="my_hover" href="#">裤子</a></li>
+                                        <li><a class="my_hover" href="#">Denim 牛仔装</a></li>
+                                        <li><a class="my_hover" href="#">运动服</a></li>
+                                        <li><a class="my_hover" href="#">海滩系列</a></li>
+                                        <li><a class="my_hover" href="#">内衣和袜子</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3">
+                                    <ul class=" list-unstyled p-0">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">包袋</a></li>
+                                        <li><a class="my_hover" href="#">手提包和斜挎包</a></li>
+                                        <li><a class="my_hover" href="#">背包</a></li>
+                                        <li><a class="my_hover" href="#">腰包</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3">
+                                    <ul class=" list-unstyled p-0">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">包袋和配饰</a></li>
+                                        <li><a class="my_hover" href="#">腰带</a></li>
+                                        <li><a class="my_hover" href="#">皮夹</a></li>
+                                        <li><a class="my_hover" href="#">小皮具</a></li>
+                                        <li><a class="my_hover" href="#">领带和方巾</a></li>
+                                        <li><a class="my_hover" href="#">时尚珠宝</a></li>
+                                        <li><a class="my_hover" href="#">帽子和手套</a></li>
+                                        <li><a class="my_hover" href="product.html">Iphone 配饰</a></li>
+                                        <li><a class="my_hover" href="#">腕表</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <a href="#jj" class="nav-link card-link px-3">VERSACE HOME <b>家居用品</b></a>
+                <li class="nav-item dh_hover px-2">
+                    <div>
+                        <a href="" class="nav-link my_hover border_bottom" >VERSACE HOME 家具精品</a>
+                    </div>
+
+                    <div class="dh_nr">
+                        <div class="d-flex justify-content-center py-5">
+                            <ul class="row list-unstyled ">
+                                <li class="col-3"><a href="#" class="my_hover">VERSACE 家具精品</a></li>
+                                <li class="col-3">
+                                    <ul class="list-unstyled">
+                                        <li><a class="my_hover" href="woman.html">卧室及浴室精品</a></li>
+                                        <li><a class="my_hover" href="woman.html">浴袍</a></li>
+                                        <li><a class="my_hover" href="woman.html">浴巾&毛巾</a></li>
+                                        <li><a class="my_hover" href="woman.html">浴室家纺</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3 border_right">
+                                    <ul class=" list-unstyled p-0">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">起居室精品</a></li>
+                                        <li><a class="my_hover" href="#">靠枕</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3">
+                                    <ul class=" list-unstyled p-0">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">HOME LIFESTYLE</a></li>
+                                        <li><a class="my_hover" href="#"><img src="picture/43.png" class="w-50" alt=""/></a></li>
+                                        <li><a class="my_hover" href="#">Fuorisalone</a></li>
+                                        <li><a class="my_hover" href="#">Home Collections</a></li>
+                                        <li><a class="my_hover" href="#">Interior Design Studio</a></li>
+                                        <li><a class="my_hover" href="#"> Palazzo Versace Hotels</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="collapse" data-parent="#parent" id="jj">
-                            <ul class="card-body list-unstyled p-0">
-                                <li><a href="#">卧室及浴室精品</a></li>
-                                <li><a href="#">起居室精品</a></li>
-                                <li><a href="#">HOME LIFESTYLE</a></li>
+                    </div>
+
+                </li>
+                <li class="nav-item dh_hover px-2">
+                    <div>
+                        <a href="" class="nav-link my_hover border_bottom" >限时折扣</a>
+                    </div>
+
+                    <div class="dh_nr">
+                        <div class="d-flex justify-content-center py-5">
+                            <div class="container">
+                                <ul class="row list-unstyled ">
+                                    <li class="col-6 px-5">
+                                        <ul class="list-unstyled">
+                                            <li class="pb-4"><a class="my_hover" href="woman.html">男士限时折扣</a></li>
+                                            <li><a class="my_hover" href="woman.html">成衣系列</a></li>
+                                            <li><a class="my_hover" href="woman.html">男鞋和包袋</a></li>
+                                            <li><a class="my_hover" href="woman.html">配饰</a></li>
+                                            <li><a class="my_hover" href="woman.html">内衣和海滩系列</a></li>
+                                            <li><a class="my_hover" href="woman.html">时尚珠宝</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-6 px-5">
+                                        <ul class=" list-unstyled p-0">
+                                            <li class="pb-4"><a class="my_hover" href="woman.html">女士限时折扣</a></li>
+                                            <li><a class="my_hover" href="#">包袋</a></li>
+                                            <li><a class="my_hover" href="#">配饰</a></li>
+                                            <li><a class="my_hover" href="#">鞋履</a></li>
+                                            <li><a class="my_hover" href="#">时尚珠宝</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dh_hover px-2">
+                    <div>
+                        <a href="" class="nav-link my_hover border_bottom" >JEANS COUTURE</a>
+                    </div>
+
+                    <div class="dh_nr bg-white">
+                        <div class="d-flex justify-content-center py-5">
+                            <ul class="row list-unstyled">
+                                <li class="col-3 border_right">
+                                    <ul class="list-unstyled">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">新品系列</a></li>
+                                        <li><img src="picture/44.png" alt="" class="w-75"/></li>
+                                        <li><a class="my_hover" href="woman.html">女士最新上市</a></li>
+                                        <li><a class="my_hover" href="woman.html">男士最新上市</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3">
+                                    <ul class=" list-unstyled">
+                                        <li class="pb-4"><a class="my_hover" href="#">女士成衣</a></li>
+                                        <li><a class="my_hover" href="#">连衣裙</a></li>
+                                        <li><a class="my_hover" href="#">衬衫&上衣</a></li>
+                                        <li><a class="my_hover" href="#">T桖&运动衫</a></li>
+                                        <li><a class="my_hover" href="#">裤装&牛仔裤</a></li>
+                                        <li><a class="my_hover" href="#">半身裙</a></li>
+                                        <li><a class="my_hover" href="#">外套&大衣</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3">
+                                    <ul class=" list-unstyled p-0">
+                                        <li class="pb-4"><a class="my_hover" href="woman.html">男士成衣</a></li>
+                                        <li><a class="my_hover" href="#">外套&大衣</a></li>
+                                        <li><a class="my_hover" href="#">T桖</a></li>
+                                        <li><a class="my_hover" href="#">运动衫</a></li>
+                                        <li><a class="my_hover" href="#">裤装&牛仔裤</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-3">
+                                    <a href="#" class="my_hover">STAY TUNED</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <a href="#zk" class="nav-link card-link px-3"><b>限时折扣</b></a>
-                        </div>
-                        <div class="collapse" data-parent="#parent" id="zk">
-                            <ul class="card-body list-unstyled p-0">
-                                <li><a href="#">男士限时折扣</a></li>
-                                <li><a href="#">女士限时折扣</a></li>
-                            </ul>
+                <li class="nav-item dh_hover px-2">
+                    <div>
+                        <a href="" class="nav-link my_hover border_bottom" >WORLD OR VERSACE</a>
+                    </div>
+
+                    <div class="dh_nr bg-white">
+                        <div class="d-flex  py-5">
+                            <div class="container">
+                                <ul class="row list-unstyled">
+                                    <li class="col-3">
+                                        <ul class="list-unstyled">
+                                            <li class="pb-4"><a class="my_hover" href="">品牌</a></li>
+                                            <li><a class="my_hover" href="woman.html">可持续发展</a></li>
+                                            <li><a class="my_hover" href="woman.html">Versace x Pride</a></li>
+                                            <li><a class="my_hover" href="woman.html">Versace 在 MET的精彩呈现</a></li>
+                                            <li><a class="my_hover" href="woman.html">Versace在奥斯卡</a></li>
+                                            <li><a class="my_hover" href="woman.html">Kith x Versace</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-3 border-right pl-0">
+                                        <img src="picture/780x960_a.jpg" alt="" class="w-75 h-100"/>
+                                    </li>
+                                    <li class="col-3 text-right pr-0">
+                                        <img src="picture/780x960_b.jpg" alt="" class="w-75 h-100"/>
+                                    </li>
+                                    <li class="col-3">
+                                        <ul class=" list-unstyled text-right">
+                                            <li class="pb-4"><a class="my_hover" href="#">女士成衣</a></li>
+                                            <li><a class="my_hover" href="#">连衣裙</a></li>
+                                            <li><a class="my_hover" href="#">衬衫&上衣</a></li>
+                                            <li><a class="my_hover" href="#">T桖&运动衫</a></li>
+                                            <li><a class="my_hover" href="#">裤装&牛仔裤</a></li>
+                                            <li><a class="my_hover" href="#">半身裙</a></li>
+                                            <li><a class="my_hover" href="#">外套&大衣</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <a href="#jc" class="nav-link card-link px-3">JEANS COUTURE</a>
-                        </div>
-                        <div class="collapse" data-parent="#parent" id="jc">
-                            <ul class="card-body list-unstyled p-0">
-                                <li><a href="#">新品系列</a></li>
-                                <li><a href="#">女士成衣</a></li>
-                                <li><a href="#">男士成衣</a></li>
-                                <li><a href="#">STAY TUNED</a></li>
-                                <li><a href="#">2019年初秋系列</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <a href="#wov" class="nav-link card-link px-3">WORLD OF VERSACE</a>
-                        </div>
-                        <div class="collapse" data-parent="#parent" id="wov">
-                            <ul class="card-body list-unstyled p-0">
-                                <li><a href="#">高点聚焦</a></li>
-                                <li><a href="#">品牌</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item d-md-none"><a href="#" class="nav-link"><hr/></a></li>
-                <li class="nav-item d-md-none"><a href="#" class="nav-link">登录/注册</a></li>
-                <li class="nav-item d-md-none"><a href="#" class="nav-link">客户服务</a></li>
-                <li class="nav-item d-md-none"><a href="#" class="nav-link">中国|中文(元)</a></li>
-                <li class="nav-item d-md-none"><a href="#" class="nav-link">精品店</a></li>
             </ul>
         </div>
     </div>
@@ -304,7 +494,7 @@
             </div>
             <div class="col-sm-4 my_bgcolor">
                 <div>
-                    <a href="product.html"><img src="picture/13.png" alt=""  class="w-50 my_scale"/></a>
+                    <a href="list.html"><img src="picture/13.png" alt=""  class="w-50 my_scale"/></a>
                 </div>
             </div>
             <div class="col-sm-4  my_bgcolor">
@@ -317,8 +507,8 @@
                 <p><a href="#" class="my_black no_underline my_hover font_small">选购 ></a></p>
             </div>
             <div class="col-sm-4 bg-white">
-                <h3 class="mt-5"><a href="product.html" class="my_black no_underline my_hover">IPHONE 手机壳</a></h3>
-                <p><a href="product.html" class="my_black no_underline my_hover font_small">选购></a></p>
+                <h3 class="mt-5"><a href="list.html" class="my_black no_underline my_hover">IPHONE 手机壳</a></h3>
+                <p><a href="list.html" class="my_black no_underline my_hover font_small">选购></a></p>
             </div>
             <div class="col-sm-4 bg-white">
                 <h3 class="mt-5"><a href="#" class="my_black no_underline my_hover">双肩背包</a></h3>
